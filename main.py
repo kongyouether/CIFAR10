@@ -4,7 +4,7 @@ from torch import nn
 from torch.utils.tensorboard import SummaryWriter
 
 data_train = torchvision.datasets.CIFAR10("./dataset", train=True, transform=torchvision.transforms.ToTensor(),
-                                          download=True)
+                                          download=True)# 训练集
 data_test = torchvision.datasets.CIFAR10("./dataset", train=False, transform=torchvision.transforms.ToTensor(),
                                          download=True)
 
